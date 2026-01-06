@@ -19,8 +19,8 @@ This project demonstrates a complete CI/CD pipeline using **Jenkins**, **Docker*
 - AWS EC2 instance (example IP: `54.224.153.198`)
 - AWS EC2 Storage `30GB`
 - Open port `3306` for MariaDB in EC2 Security Group  
-- Docker Hub account  
-- Jenkins installed on EC2  
+- Docker Hub account
+- Create RDS DataBase
 
 ---
 
