@@ -25,3 +25,7 @@ This project demonstrates a complete CI/CD pipeline using **Jenkins**, **Docker*
 ---
 
 ##  Installation Steps & Commands
+### 1. EC2
+~~~sh
+sudo -i
+~~~
