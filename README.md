@@ -128,5 +128,16 @@ VITE_API_URL="http://<EC2 PUBLIC IP>:8081/api"
 ```bash
 docker kill $(docker ps -q) && docker rm -v $(docker ps -a -q) && docker rmi $(docker images -q)
 ```
+---
+
+##  Store DockerHub Credentials in Jenkins
+
+1. Go to Jenkins Dashboard → Manage Jenkins → Manage Credentials  
+2. Select domain: `(global)`  
+3. Add Credentials:  
+    - **Username:** `<dockerhub-username>`  
+    - **Password:** `<dockerhub-password>`  
+    - **ID:** `dockerhub-cred`  
 
 ---
+
