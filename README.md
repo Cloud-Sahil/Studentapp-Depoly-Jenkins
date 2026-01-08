@@ -106,6 +106,7 @@ show databases;
 ```sh
 exit;
 ```
+## `Fork Github Repo. & Update application.properties & .env - <https://github.com/Cloud-Sahil/EasyCRUD-docker-updated.git>`
 ### `application.properties`
 ```properties
 server.port=8081
