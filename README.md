@@ -25,21 +25,20 @@ This project demonstrates a complete CI/CD pipeline using **Jenkins**, **Docker*
 ---
 
 ##  Installation Steps & Commands
-### EC2
-####  Root 
+###  Root 
 ~~~sh
 sudo -i
 ~~~
-####  Update 
+###  Update 
 ~~~sh
 apt update
 ~~~
-#### Install Java
+### Install Java
 ```bash
 sudo apt install openjdk-17-jdk -y
 ```
 
-####  Install Jenkins
+###  Install Jenkins
 ```bash
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
@@ -50,33 +49,33 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-#### Install Docker
+### Install Docker
 ```bash
 apt install docker.io -y
 ```
 ```sh
 sudo usermod -aG docker jenkins
 ```
-#### Grant Jenkins Sudo Privileges
+### Grant Jenkins Sudo Privileges
 ```bash
 sudo visudo
 # Add the following line at the end of the file: # User privilege specification : root
 jenkins ALL=(ALL) NOPASSWD: ALL
 ```
-####  Install Mysql-client
+###  Install Mysql-client
 ```sh
 apt install mysql-client -y
 ```
-####  Mysql-client Database 
+###  Mysql-client Database 
 ```sh
 mysql -h (endpoint) -u (username) -p
 ```
 ```sh
 Enter password (password)
 ```
-##### RDS Database Endpoint copy & paste
-##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
-##### Example: redhat123
+#### RDS Database Endpoint copy & paste
+#### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
+#### Example: redhat123
 
 ```sh
 CREATE DATABASE student_db;
@@ -84,4 +83,5 @@ CREATE DATABASE student_db;
 ```sh
 GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
 ```
+#### Example: GRANT ALL PRIVILEGES ON student_db.* TO 'admin'@'%' IDENTIFIED BY 'redhat123';
 
