@@ -57,3 +57,9 @@ apt install docker.io -y
 ```sh
 sudo usermod -aG docker jenkins
 ```
+#### Grant Jenkins Sudo Privileges
+```bash
+sudo visudo
+# Add the following line at the end of the file:
+jenkins ALL=(ALL) NOPASSWD: ALL
+```
