@@ -107,7 +107,7 @@ show databases;
 exit;
 ```
 ## `Fork Github Repo. & Update application.properties & .env - <https://github.com/Cloud-Sahil/EasyCRUD-docker-updated.git>`
-### `application.properties`
+### backend = `application.properties`
 ```properties
 server.port=8081
 spring.datasource.url=jdbc:mysql://<RDS ENDPONIT>:3306/student_db
@@ -118,7 +118,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 ```
 #### Example: RDS End Point 
-### `.env`
+### frontend = `.env`
 ```bash
 VITE_API_URL="http://<EC2 PUBLIC IP>:8081/api"
 ```
