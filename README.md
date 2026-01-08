@@ -100,3 +100,9 @@ CREATE TABLE `students` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 ```
+```sh
+show databases;
+```
+```sh
+exit;
+```
