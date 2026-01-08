@@ -26,13 +26,35 @@ This project demonstrates a complete CI/CD pipeline using **Jenkins**, **Docker*
 
 ##  Installation Steps & Commands
 ### EC2
-#### 1. Root 
+####  Root 
 ~~~sh
 sudo -i
 ~~~
-##### 2. Update 
+####  Update 
 ~~~sh
 apt update
 ~~~
+#### Install Java
+```bash
+sudo apt update
+sudo apt install openjdk-17-jdk
+java -version
+```
 
+####  Install Jenkins
+```bash
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
+
+#### Install Docker
+```bash
+sudo apt install docker.io -y
+sudo usermod -aG docker jenkins
+```
 
