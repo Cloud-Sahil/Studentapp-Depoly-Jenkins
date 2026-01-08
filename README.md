@@ -60,6 +60,6 @@ sudo usermod -aG docker jenkins
 #### Grant Jenkins Sudo Privileges
 ```bash
 sudo visudo
-# Add the following line at the end of the file:
+# Add the following line at the end of the file: # User privilege specification : root
 jenkins ALL=(ALL) NOPASSWD: ALL
 ```
