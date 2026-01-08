@@ -54,4 +54,6 @@ sudo apt-get install jenkins
 ```bash
 apt install docker.io -y
 ```
-
+```sh
+sudo usermod -aG docker jenkins
+```
