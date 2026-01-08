@@ -212,7 +212,8 @@ pipeline {
 ```sh
 systemctl restart jenkins
 ```
-
+---
 ## Build Jenkins Pipeline
+---
 
 ### Access EC2 < Public IP>
