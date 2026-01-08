@@ -63,3 +63,7 @@ sudo visudo
 # Add the following line at the end of the file: # User privilege specification : root
 jenkins ALL=(ALL) NOPASSWD: ALL
 ```
+#### Install Mysql
+```sh
+apt install mysql-client -y
+```
