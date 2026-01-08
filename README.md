@@ -63,11 +63,25 @@ sudo visudo
 # Add the following line at the end of the file: # User privilege specification : root
 jenkins ALL=(ALL) NOPASSWD: ALL
 ```
-#### Install Mysql
+####  Install Mysql-client
 ```sh
 apt install mysql-client -y
 ```
+####  Mysql-client Database 
 ```sh
-mysql -h <Database EndPoint> -u admin -p
+mysql -h (endpoint) -u (username) -p
+```
+```sh
+Enter password (password)
+```
+##### RDS Database Endpoint copy & paste
+##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
+##### Example: redhat123
+
+```sh
+CREATE DATABASE student_db;
+```
+```sh
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
 ```
 
