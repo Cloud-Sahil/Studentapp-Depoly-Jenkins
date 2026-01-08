@@ -74,7 +74,7 @@ mysql -h (endpoint) -u (username) -p
 Enter password (password)
 ```
 #### RDS Database Endpoint copy & paste
-#### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
+#### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u admin -p
 #### Example: redhat123
 
 ```sh
@@ -106,3 +106,19 @@ show databases;
 ```sh
 exit;
 ```
+### `application.properties`
+```properties
+server.port=8081
+spring.datasource.url=jdbc:mysql://<RDS ENDPONIT>:3306/student_db
+spring.datasource.username=admin
+spring.datasource.password=redhat123
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
+```
+#### Example: RDS End Point 
+### `.env`
+```bash
+VITE_API_URL="http://<EC2 PUBLIC IP>:8081/api"
+```
+#### Example: EC2 Public IP
