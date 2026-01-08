@@ -67,3 +67,7 @@ jenkins ALL=(ALL) NOPASSWD: ALL
 ```sh
 apt install mysql-client -y
 ```
+```sh
+mysql -h <Database EndPoint> -u admin -p
+```
+
