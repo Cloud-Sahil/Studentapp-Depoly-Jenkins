@@ -207,3 +207,10 @@ pipeline {
 ```
 
 ---
+
+### Restart Jenkins
+```sh
+systemctl restart jenkins
+```
+
+## Build Jenkins Pipeline
