@@ -123,3 +123,10 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 VITE_API_URL="http://<EC2 PUBLIC IP>:8081/api"
 ```
 #### Example: EC2 Public IP
+### Docker Cleanup Command
+
+```bash
+docker kill $(docker ps -q) && docker rm -v $(docker ps -a -q) && docker rmi $(docker images -q)
+```
+
+---
